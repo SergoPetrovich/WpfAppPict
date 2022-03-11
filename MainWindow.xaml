@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfAppPict.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPict"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <Button x:Name="Open" Content="Выбрать изображение" Click="Open_Click"/>
+            <Button x:Name="RecogTextBtn" Content="Распознать текст" Click="RecogTextBtn_Click"/>
+        </Menu>
+        <Grid Margin="0,23,0,10">
+            <Image x:Name="img" Width="357" Margin="54,2,388,24"/>
+            <TextBlock x:Name="TextBl" TextWrapping="Wrap" Text="TextBlock" Height="210" Width="324" Margin="400,112,76,112"/>
+        </Grid>
+
+    </Grid>
+</Window>
