@@ -12,8 +12,10 @@
             <Button x:Name="RecogTextBtn" Content="Распознать текст" Click="RecogTextBtn_Click"/>
         </Menu>
         <Grid Margin="0,23,0,10">
-            <Image x:Name="img" Width="357" Margin="54,2,388,24"/>
-            <TextBlock x:Name="TextBl" TextWrapping="Wrap" Text="TextBlock" Height="210" Width="324" Margin="400,112,76,112"/>
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="img" Margin="22,13,432,24" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="TextBl" TextWrapping="Wrap" Text="TextBlock" Margin="377,10,44,39"/>
         </Grid>
 
     </Grid>
